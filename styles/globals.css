@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 a {
@@ -13,4 +12,19 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+  width: 4px;
+  height: 4px;
+  background:rgb(70, 163, 88);
+}
+
+:root {
+  --swiper-theme-color: rgb(70, 163, 88) !important;
+}
+
+::selection{
+  color: white;
+  background:rgb(70, 163, 88);
 }
