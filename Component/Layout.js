@@ -6,7 +6,7 @@ import Header from "./Header";
 const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={ThemeContext("light")}>
-      <Box sx={{ maxWidth: "1920px", m: "0 auto", px: {xs:'20px', sm:'50px', md:"70px"} }}>
+      <Box sx={{ maxWidth: "1920px", m: "0 auto", px: {xs:'0px', sm:'50px', md:"70px"} }}>
         <Header />
         {children}
         <Footer />

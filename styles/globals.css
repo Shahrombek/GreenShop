@@ -26,5 +26,5 @@ a {
 
 ::selection{
   color: white;
-  background:rgb(70, 163, 88);
+  background:rgb(70, 163, 88, 0.9);
 }

@@ -17,7 +17,7 @@ const Header = () => {
         left: 0,
         background: "white",
         zIndex: 10,
-        boxShadow: '0px 30px 30px 0px rgba(255, 255, 255, 1)',
+        boxShadow: "0px 20px 30px 0px rgba(255, 255, 255, 1)",
       }}
     >
       <Box
@@ -25,13 +25,20 @@ const Header = () => {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          p:{xs:"15px 0px", md:"15px 0px 0px 0px"},
+          p: { xs: "15px 0px", md: "15px 0px 0px 0px" },
+          px: { xs: "20px", sm: 0 },
         }}
       >
         <Box onClick={() => router.push("/home")} sx={{ cursor: "pointer" }}>
           <Image src={Logo} alt="logo" />
         </Box>
-        <Box sx={{ display: {xs: "none", md:"flex"}, alignItems: "center", gap: { xs:'10px',md:"30px"} }}>
+        <Box
+          sx={{
+            display: { xs: "none", md: "flex" },
+            alignItems: "center",
+            gap: { xs: "10px", md: "30px" },
+          }}
+        >
           <Typography
             sx={{
               fontSize: "15px",

@@ -529,13 +529,14 @@ const Footer = () => {
           py: {xs:'3px',sm:"5px"},
           textAlign: "center",
           py: 3,
+          px:2,
           background: "white",
         }}
       >
-        © 2022 Created by Shakhrombek.{" "}
+        © 2022 Created by Shakhrombek.
         <span style={{ color: "rgb(70, 163, 88)", fontWeight: 500 }}>
           GreenShop
-        </span>{" "}
+        </span>
         All Rights Reserved.
       </Typography>
     </Box>
