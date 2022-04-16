@@ -163,7 +163,7 @@ const Footer = () => {
           sx={{
             display: "flex",
             alignItems: { xs: "start", sm: "center" },
-            width: { xs: "250px", sm: "auto" },
+            // width: { xs: "250px", sm: "auto" },
             flexDirection: { xs: "column", md: "row" },
             gap: { xs: "15px", md: "0" },
             mx: "auto",
@@ -175,7 +175,7 @@ const Footer = () => {
               display: "flex",
               alignItems: { xs: "start", sm: "center" },
               width: { xs: "100%", md: "auto" },
-              flexDirection: { xs: "column", sm: "row" },
+              // flexDirection: { xs: "column", sm: "row" },
               gap: { xs: "7px", md: "0" },
             }}
           >
@@ -208,7 +208,7 @@ const Footer = () => {
               display: "flex",
               alignItems: { xs: "start", sm: "center" },
               width: { xs: "100%", md: "auto" },
-              flexDirection: { xs: "column", sm: "row" },
+              // flexDirection: { xs: "column", sm: "row" },
               gap: { xs: "7px", md: "0" },
             }}
           >
@@ -224,7 +224,7 @@ const Footer = () => {
               <Typography
                 sx={{ fontSize: { xs: "13px", sm: "14px" }, fontWeight: 400 }}
               >
-                shahromfozilov02@gmail.com
+                shahromfozilov 02@gmail.com
               </Typography>
             </Box>
             <Box
