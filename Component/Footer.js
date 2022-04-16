@@ -42,9 +42,9 @@ const Footer = () => {
           sx={{
             width: { xs: "100%", lg: "auto" },
             flex: 4,
-            display: "flex",
+            display: { xs: "none", sm: "flex" },
             alignItems: "center",
-            flexDirection: { xs: "column", sm: "row" },
+            // flexDirection: { xs: "column", sm: "row" },
           }}
         >
           <Box
@@ -82,8 +82,17 @@ const Footer = () => {
             <img style={{ width: "100%" }} src={g1.src} alt="rose" />
           </Box>
         </Box>
-        <Box sx={{ flex: 2, mb: { xs: 3, lg: 0 }, px: { xs: 4, lg: 0 } }}>
-          <Typography sx={{ fontSize: "18px", fontWeight: 600 }}>
+        <Box
+          sx={{
+            flex: 2,
+            mb: { xs: 3, lg: 0 },
+            px: { xs: 2, lg: 0 },
+            pt: { xs: 3, sm: 0 },
+          }}
+        >
+          <Typography
+            sx={{ fontSize: { xs: "16px", sm: "18px" }, fontWeight: 600 }}
+          >
             Would you like to join newsletters?
           </Typography>
           <Box
@@ -93,7 +102,7 @@ const Footer = () => {
               borderRadius: "6px",
               background: "transparent",
               display: "flex",
-              width: "90%",
+              width: { xs: "100%", sm: "90%" },
               boxShadow: "0px 0px 15px 0px rgba(34, 60, 80, 0.15)",
               mt: 2,
               mb: "16px",
@@ -131,7 +140,7 @@ const Footer = () => {
             sx={{
               fontWeight: 400,
               fontSize: "13px",
-              width: "95%",
+              // width: "95%",
               color: "#737373",
               lineHeight: 1.7,
             }}
@@ -167,7 +176,7 @@ const Footer = () => {
               alignItems: { xs: "start", sm: "center" },
               width: { xs: "100%", md: "auto" },
               flexDirection: { xs: "column", sm: "row" },
-              gap: { xs: "15px", md: "0" },
+              gap: { xs: "7px", md: "0" },
             }}
           >
             <Box sx={{ flex: 1 }}>
@@ -183,7 +192,11 @@ const Footer = () => {
             >
               <FmdGoodOutlinedIcon sx={{ color: "primary.main" }} />
               <Typography
-                sx={{ fontSize: "14px", fontWeight: 400, maxWidth: "200px" }}
+                sx={{
+                  fontSize: { xs: "13px", sm: "14px" },
+                  fontWeight: 400,
+                  maxWidth: "200px",
+                }}
               >
                 Yunusabad District, Amir Temur Avenue
               </Typography>
@@ -196,7 +209,7 @@ const Footer = () => {
               alignItems: { xs: "start", sm: "center" },
               width: { xs: "100%", md: "auto" },
               flexDirection: { xs: "column", sm: "row" },
-              gap: { xs: "15px", md: "0" },
+              gap: { xs: "7px", md: "0" },
             }}
           >
             <Box
@@ -208,7 +221,9 @@ const Footer = () => {
               }}
             >
               <MailOutlinedIcon sx={{ color: "primary.main" }} />
-              <Typography sx={{ fontSize: "14px", fontWeight: 400 }}>
+              <Typography
+                sx={{ fontSize: { xs: "13px", sm: "14px" }, fontWeight: 400 }}
+              >
                 shahromfozilov02@gmail.com
               </Typography>
             </Box>
@@ -221,7 +236,9 @@ const Footer = () => {
               }}
             >
               <WifiCalling3RoundedIcon sx={{ color: "primary.main" }} />
-              <Typography sx={{ fontSize: "14px", fontWeight: 400 }}>
+              <Typography
+                sx={{ fontSize: { xs: "13px", sm: "14px" }, fontWeight: 400 }}
+              >
                 +998 (94) 651 33 02
               </Typography>
             </Box>
@@ -230,89 +247,223 @@ const Footer = () => {
       </Box>
       <Divider sx={{ borderColor: "rgb(70, 163, 88, 0.4)" }} />
 
-      <Box sx={{ display: "flex", alignItems: "start", flexDirection: {xs:'column', md:'row'}}}>
-        <Box sx={{flex:1, display: "flex", alignItems: "start", width:{xs:'100%', md:'auto'} }}>
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "start",
+          flexDirection: { xs: "column", md: "row" },
+        }}
+      >
+        <Box
+          sx={{
+            flex: 1,
+            display: "flex",
+            alignItems: "start",
+            width: { xs: "100%", md: "auto" },
+          }}
+        >
           <Box sx={{ flex: 1, px: 2, py: 3 }}>
-            <Typography sx={{ fontSize: "18px", fontWeight: 600, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "16px", sm: "18px" },
+                fontWeight: 600,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               My Account
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               My Account
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Our stores
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Contact us
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Career
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Specials
             </Typography>
           </Box>
           <Box sx={{ flex: 1, px: 2, py: 3 }}>
-            <Typography sx={{ fontSize: "18px", fontWeight: 600, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "16px", sm: "18px" },
+                fontWeight: 600,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Help & Guide
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Help Center
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               How to Buy
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Shipping & Delivery
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Product Policy
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               How to Return
             </Typography>
           </Box>
         </Box>
-        <Box sx={{flex:1, display: "flex", alignItems: "start", width:{xs:'100%', md:'auto'} }}>
-          <Box sx={{ flex: 1, px: 2, py: 3 }}>
-            <Typography sx={{ fontSize: "18px", fontWeight: 600, py: "5px" }}>
+        <Box
+          sx={{
+            flex: 1,
+            display: "flex",
+            alignItems: "start",
+            width: { xs: "100%", md: "auto" },
+          }}
+        >
+          <Box sx={{ flex: 1, px: 2, py: 3, pt: { xs: 0, md: 3 } }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "16px", sm: "18px" },
+                fontWeight: 600,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Categories
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               House Plants
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Potter Plants
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Seeds
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Small Plants
             </Typography>
-            <Typography sx={{ fontSize: "14px", fontWeight: 400, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "13px", sm: "14px" },
+                fontWeight: 400,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Accessories
             </Typography>
           </Box>
-          <Box sx={{ flex: 1, px: 2, py: 3 }}>
-            <Typography sx={{ fontSize: "18px", fontWeight: 600, py: "5px" }}>
+          <Box sx={{ flex: 1, px: 2, py: 3, pt: { xs: 0, md: 3 } }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "16px", sm: "18px" },
+                fontWeight: 600,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               Social Media
             </Typography>
             <Box
               sx={{
-                my: 2,
+                my: {xs:1,sm:2},
                 display: "flex",
                 justifyContent: "space-between",
                 width: "90%",
-                gap:'10px'
+                gap: "10px",
               }}
             >
               <Button
                 sx={{
-                  minWidth: { xs:'20px', sm:"30px"},
+                  minWidth: { xs: "20px", sm: "30px" },
                   border: "1px solid rgb(70, 163, 88, 0.3)",
                   borderRadius: "6px",
-                  display:{xs:'none', sm:'inline-flex'}
+                  display: { xs: "none", sm: "inline-flex" },
                 }}
               >
                 <FacebookIcon />
@@ -340,7 +491,7 @@ const Footer = () => {
                   minWidth: "30px",
                   border: "1px solid rgb(70, 163, 88, 0.3)",
                   borderRadius: "6px",
-                  display:{xs:'none', sm:'inline-flex'}
+                  display: { xs: "none", sm: "inline-flex" },
                 }}
               >
                 <LinkedInIcon />
@@ -355,11 +506,17 @@ const Footer = () => {
                 <YouTubeIcon />
               </Button>
             </Box>
-            <Typography sx={{ fontSize: "18px", fontWeight: 600, py: "5px" }}>
+            <Typography
+              sx={{
+                fontSize: { xs: "16px", sm: "18px" },
+                fontWeight: 600,
+                py: {xs:'3px',sm:"5px"},
+              }}
+            >
               We accept
             </Typography>
             <Box>
-              <img style={{width: "70%"}} src={gf.src} alt="footer" />
+              <img style={{ width: "100%" }} src={gf.src} alt="footer" />
             </Box>
           </Box>
         </Box>
@@ -367,9 +524,9 @@ const Footer = () => {
       <Divider sx={{ borderColor: "rgb(70, 163, 88, 0.4)" }} />
       <Typography
         sx={{
-          fontSize: "14px",
+          fontSize: { xs: "13px", sm: "14px" },
           fontWeight: 400,
-          py: "5px",
+          py: {xs:'3px',sm:"5px"},
           textAlign: "center",
           py: 3,
           background: "white",
