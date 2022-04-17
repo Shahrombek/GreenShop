@@ -30,7 +30,7 @@ const Footer = () => {
     setValue(e.target.value);
   };
   return (
-    <Box sx={{ background: "#FBFBFB", mt: 6 }}>
+    <Box sx={{ background: "#FBFBFB", mt: {xs:3,sm:6} }}>
       <Box
         sx={{
           display: "flex",
