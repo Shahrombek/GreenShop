@@ -22,7 +22,7 @@ const BlogPosts = () => {
           mt: 10,
         }}
       >
-         <Box
+        <Box
           sx={{
             flex: 1,
             width: { xs: "100%", md: "auto" },
@@ -35,9 +35,9 @@ const BlogPosts = () => {
           <Box
             sx={{
               mt: "-60px",
-              width: { xs: '500px', sm: "30%", md: "90%", lg: "70%" },
+              width: { xs: "500px", sm: "30%", md: "90%", lg: "70%" },
               position: "relative",
-              ml: { xs: '-20px', md: "-20px", lg: 0 },
+              ml: { xs: "-20px", md: "-20px", lg: 0 },
             }}
           >
             <img
@@ -46,7 +46,7 @@ const BlogPosts = () => {
                 position: "absolute",
                 left: 0,
                 bottom: 0,
-                zIndex:-0
+                zIndex: -0,
               }}
               src={img14.src}
             />
@@ -60,7 +60,7 @@ const BlogPosts = () => {
                 textAlign: "end",
               }}
             >
-              Styling Trends & much more
+              Summer cactus & succulents
             </Typography>
             <Typography
               sx={{
@@ -69,8 +69,8 @@ const BlogPosts = () => {
                 textAlign: "center",
                 color: "#727272",
                 mb: 3,
-                width:{xs:'130%', sm:'100%'},
-                ml:{xs:'-60px', sm:0},
+                width: { xs: "130%", sm: "100%" },
+                ml: { xs: "-60px", sm: 0 },
                 textAlign: "end",
               }}
             >
@@ -85,7 +85,7 @@ const BlogPosts = () => {
                   background: "rgb(70, 163, 88)",
                   "&:hover": { background: "rgb(70, 163, 88)" },
                   px: 2,
-                  mb:2,
+                  mb: 2,
                   borderRadius: "6px",
                 }}
               >
@@ -112,9 +112,9 @@ const BlogPosts = () => {
           <Box
             sx={{
               mt: "-60px",
-              width: { xs: '500px', sm: "30%", md: "90%", lg: "70%" },
+              width: { xs: "500px", sm: "30%", md: "90%", lg: "70%" },
               position: "relative",
-              ml: { xs: '-20px', md: "-20px", lg: 0 },
+              ml: { xs: "-20px", md: "-20px", lg: 0 },
             }}
           >
             <img
@@ -123,7 +123,7 @@ const BlogPosts = () => {
                 position: "absolute",
                 left: 0,
                 bottom: 0,
-                zIndex:-0
+                zIndex: -0,
               }}
               src={img15.src}
             />
@@ -146,8 +146,8 @@ const BlogPosts = () => {
                 textAlign: "center",
                 color: "#727272",
                 mb: 3,
-                width:{xs:'130%', sm:'100%'},
-                ml:{xs:'-60px', sm:0},
+                width: { xs: "130%", sm: "100%" },
+                ml: { xs: "-60px", sm: 0 },
                 textAlign: "end",
               }}
             >
@@ -162,7 +162,7 @@ const BlogPosts = () => {
                   background: "rgb(70, 163, 88)",
                   "&:hover": { background: "rgb(70, 163, 88)" },
                   px: 2,
-                  mb:2,
+                  mb: 2,
                   borderRadius: "6px",
                 }}
               >
@@ -177,7 +177,6 @@ const BlogPosts = () => {
           </Box>
         </Box>
       </Box>
-
 
       <Box sx={{ my: 5 }}>
         <Typography
