@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 
 import gul from "../../assets/gul.png";
 import gul1 from "../../assets/gul1.png";
+import gul2 from "../../assets/image 15.png";
 
 
 const SwiperHome = () => {
@@ -25,9 +26,9 @@ const SwiperHome = () => {
       modules={[Pagination]}
       className="mySwiper"
     >
-      {swiper.map((item) => {
+      {swiper.map((item, index) => {
         return (
-          <SwiperSlide key={item}>
+          <SwiperSlide key={index}>
             <Box
               sx={{
                 px: 3,

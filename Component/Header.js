@@ -9,6 +9,9 @@ import { useRouter } from "next/router";
 
 const Header = () => {
   const router = useRouter();
+
+  const path = router.pathname;
+  console.log(path.includes("shop"));
   return (
     <Box
       sx={{
@@ -40,10 +43,13 @@ const Header = () => {
           }}
         >
           <Typography
+            onClick={() => router.push("/home")}
             sx={{
               fontSize: "15px",
               fontWeight: 600,
-              borderBottom: "3px solid rgb(70, 163, 88)",
+              borderBottom: path.includes("home")
+                ? "3px solid rgb(70, 163, 88)"
+                : "3px solid white",
               py: 2,
               cursor: "pointer",
               transition: "0.3s",
@@ -52,10 +58,13 @@ const Header = () => {
             Home
           </Typography>
           <Typography
+            onClick={() => router.push("/shop")}
             sx={{
               fontSize: "15px",
               fontWeight: 400,
-              borderBottom: "3px solid white",
+              borderBottom: path.includes("shop")
+                ? "3px solid rgb(70, 163, 88)"
+                : "3px solid white",
               py: 2,
               cursor: "pointer",
               transition: "0.3s",
@@ -64,10 +73,13 @@ const Header = () => {
             Shop
           </Typography>
           <Typography
+            onClick={() => router.push("/plantCare")}
             sx={{
               fontSize: "15px",
               fontWeight: 400,
-              borderBottom: "3px solid white",
+              borderBottom: path.includes("Plant")
+                ? "3px solid rgb(70, 163, 88)"
+                : "3px solid white",
               py: 2,
               cursor: "pointer",
               transition: "0.3s",
@@ -76,10 +88,13 @@ const Header = () => {
             Plant Care
           </Typography>
           <Typography
+            onClick={() => router.push("/blogs")}
             sx={{
               fontSize: "15px",
               fontWeight: 400,
-              borderBottom: "3px solid white",
+              borderBottom: path.includes("Blogs")
+                ? "3px solid rgb(70, 163, 88)"
+                : "3px solid white",
               py: 2,
               cursor: "pointer",
               transition: "0.3s",
