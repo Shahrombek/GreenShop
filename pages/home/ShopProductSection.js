@@ -17,13 +17,13 @@ import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlin
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
 
 const ShopProductSection = () => {
-  const [width, setWidth] = useState(window.innerWidth);
+//   const [width, setWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    window.addEventListener("resize", () => {
-      setWidth(window.innerWidth);
-    });
-  }, []);
+//   useEffect(() => {
+//     window.addEventListener("resize", () => {
+//       setWidth(window.innerWidth);
+//     });
+//   }, []);
 
   const [num, setNum] = useState(0);
   const [value, setValue] = React.useState([0, 64]);
@@ -45,7 +45,7 @@ const ShopProductSection = () => {
   };
   const currentOrders = Product;
   const [currentPage, setCurrentPage] = useState(1);
-  const [ordersPerPage, setOrdersPerPage] = useState(width < 1200 ? 8 : 9);
+  const [ordersPerPage, setOrdersPerPage] = useState(9);
   var pageNumbers = Math.ceil(currentOrders.length / ordersPerPage);
   if (Product.length >= 6) {
     const indexOfLastOrder = currentPage * ordersPerPage;
